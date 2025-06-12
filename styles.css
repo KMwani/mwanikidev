@@ -190,9 +190,11 @@ background: linear-gradient(90deg, rgba(250, 240, 239, 1) 54%, rgba(0, 0, 0, 1) 
 .skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    place-items: left;
+    place-content: center;
 }
 .skill{
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -234,7 +236,7 @@ background: linear-gradient(90deg, rgba(250, 240, 239, 1) 54%, rgba(0, 0, 0, 1) 
     justify-content: center;
     background: black;
     width: fit-content;
-    margin: 0;
+    margin-left: 10px;
     padding-bottom: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -368,11 +370,18 @@ background: linear-gradient(90deg, rgba(250, 240, 239, 1) 54%, rgba(0, 0, 0, 1) 
         width: 300px;
     }
 
-    .service-cards, .skills {
+    .service-cards, .project-cards {
         grid-template-columns: 1fr;
         gap: 15px;
     }
 
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skill{
+    margin: 8px;
+    padding: 10px 10px 0;
+}
     .skill img {
         width: 40px;
         height: 40px;
@@ -413,13 +422,17 @@ background: linear-gradient(90deg, rgba(250, 240, 239, 1) 54%, rgba(0, 0, 0, 1) 
         font-size: 14px;
     }
 
-    .service-cards {
+    .service-cards, .project-cards {
         grid-template-columns: 1fr;
     }
 
-    .skills {
-        grid-template-columns: 1fr;
+     .skills{
+        grid-template-columns: 1fr 1fr;
     }
+    .skill{
+    margin: 8px;
+    padding: 10px 10px 0;
+}
 
     .footer ul li {
         padding: 0 10px;
